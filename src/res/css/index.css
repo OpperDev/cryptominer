@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+header {
+    -webkit-app-region: drag;
+    user-select: none;
+    position: relative;
+    background: #232323;
+}
+
+.title {
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.title span {
+    font-weight: 300;
+}
+
+.control-box {
+    position: absolute;
+    right: 4;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.control-box div {
+    display: inline-block;
+    margin-right: 5px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.minimize-btn,
+.close-btn {
+    -webkit-app-region: no-drag;
+}
+
+.close-btn { background-color: #e74c3c; }
+.minimize-btn { background-color: #2ecc71; }
+
+main {
+    width: 100%;
+    height: calc(100% - 40px);
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+.content p {
+    user-select: none;
+}
+
+.content .displayed-text {
+    font-size: 1.1em;
+    color: #444;
+}
+
+.content button {
+    display: inline-block;
+    width: 45%;
+    height: 30px;
+}
+
+.texts {
+    margin: 5px;
+    font-size: .8em;
+    color: #555;
+    display: none;
+}
