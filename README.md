@@ -2,7 +2,7 @@
 ## What is cryptominer?
 Cryptominer is a simple eth/mon miner  made in nodejs with electron.
 ## How to use it?
-Make you an account on [Coin Imp](coinimp.com), then clone this repo with the following command:
+Make you an account on [Coin Imp](https://www.coinimp.com), then clone this repo with the following command:
 `git clone https://github.com/OpperDev/cryptominer.git`
 then go in the master folder, and type `npm install`
 then go in `src/res/js/index.js`
